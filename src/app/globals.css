@@ -1,9 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+ :root {
+    --background: 248 246 245; /* #f8f6f5 - Main background */
+    --foreground: 18 16 15; /* #12100f - Main text */
+    --card: 248 246 245;
+    --card-foreground: 18 16 15;
+    --popover: 248 246 245;
+    --popover-foreground: 18 16 15;
+    --primary: 124 120 116; /* #7c7874 - Primary accent */
+    --primary-foreground: 248 246 245;
+    --secondary: 163 176 188; /* #a3b0bc - Secondary accent */
+    --secondary-foreground: 18 16 15;
+    --muted: 154 145 141; /* #9a918d */
+    --muted-foreground: 91 81 78; /* #5b514e */
+    --accent: 196 98 102; /* #c46266 - Pink accent */
+    --accent-foreground: 248 246 245;
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 246 245;
+    --border: 154 145 141;
+    --input: 248 246 245;
+    --ring: 124 120 116;
+    --radius: 0.5rem;
+    --chart-1: 12 76 86;
+    --chart-2: 173 217 86;
+    --chart-3: 249 115 22;
+    --chart-4: 196 4 108;
+    --chart-5: 163 163 163;
+  }
 
 @theme inline {
   --color-background: var(--background);
@@ -24,3 +47,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
