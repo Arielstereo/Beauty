@@ -48,21 +48,27 @@ const Header = () => {
             <nav className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-bold text-lg cursor-pointer"
+                className="text-foreground hover:text-slate-300 transition-colors duration-200 font-bold text-lg cursor-pointer"
               >
                 Inicio
               </button>
               <button
                 onClick={() => scrollToSection("nosotros")}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-bold text-lg cursor-pointer"
+                className="text-foreground hover:text-slate-300 transition-colors duration-200 font-bold text-lg cursor-pointer"
               >
                 Nosotros
               </button>
               <button
                 onClick={() => scrollToSection("servicios")}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-bold text-lg cursor-pointer"
+                className="text-foreground hover:text-slate-300 transition-colors duration-200 font-bold text-lg cursor-pointer"
               >
                 Servicios
+              </button>
+              <button
+                onClick={() => scrollToSection("sucursales")}
+                className="text-foreground hover:text-slate-300 transition-colors duration-200 font-bold text-lg cursor-pointer"
+              >
+                Sucursales
               </button>
             </nav>
           )}
@@ -83,11 +89,17 @@ const Header = () => {
             </div>
           )}
         </div>
-
         {/* Mobile Navigation */}
         {isMenuOpen && pathname !== "/servicios" && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-sm border-t border-border">
+            <div
+              className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-sm border-t border-border
+              transition-all duration-300 ease-out
+              animate-fade-in-down"
+              style={{
+                animation: "fade-in-down 1.3s",
+              }}
+            >
               <button
                 onClick={() => scrollToSection("inicio")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
@@ -105,6 +117,12 @@ const Header = () => {
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 Servicios
+              </button>
+              <button
+                onClick={() => scrollToSection("sucursales")}
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Sucursales
               </button>
             </div>
           </div>

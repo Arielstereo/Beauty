@@ -1,7 +1,7 @@
 const WspButton = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=1122334455&text=Hola%20quiero%20reservar%20un%20turno%20para:"
+      href="https://api.whatsapp.com/send?phone=1122334455&text=Hola%20Beauty%20quiero%20hacer%20una%20consulta"
       target="_blank"
       className="z-50 fixed right-4 md:right-8 bottom-4 md:bottom-16 cursor-pointer animate-pulse w-12 h-12 md:w-14 md:h-14"
     >

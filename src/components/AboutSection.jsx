@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="relative h-96 md:h-[500px] mb-16 overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1488345979593-09db0f85545f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Nails & Co Universe"
+            alt="Beauty Spa Universe"
             fill
             className="object-cover"
           />
@@ -25,9 +25,9 @@ const AboutSection = () => {
             <p>
               Durante más de una década,{" "}
               <strong className="text-foreground font-semibold">
-                Nails & Co
+                Beauty Spa{" "}
               </strong>
-              . se ha comprometido a realzar la belleza única y elevar la
+              se ha comprometido a realzar la belleza única y elevar la
               experiencia de cuidado personal a un momento de placer y
               relajación. Nuestra historia comenzó con la visión de crear
               conexiones genuinas con nuestras clientas en un ambiente acogedor,
@@ -38,16 +38,16 @@ const AboutSection = () => {
             <p>
               Nos enfocamos en utilizar solo los mejores productos y técnicas
               para lograr resultados impresionantes, priorizando la salud y el
-              bienestar de tus uñas, cabello y piel. Con 30 salones en{" "}
+              bienestar de tus uñas, cabello y piel. Con varios salones en{" "}
               <strong className="text-foreground font-semibold">
-                Argentina, Uruguay y Miami
+                Argentina
               </strong>
               , esperamos seguir realzando la belleza natural y el bienestar por
               muchos años más. En{" "}
               <strong className="text-foreground font-semibold">
-                Nails & Co
+                Beauty Spa
               </strong>
-              ., el lujo se encuentra en la sutileza de los pequeños placeres y
+              , el lujo se encuentra en la sutileza de los pequeños placeres y
               en la creación de momentos memorables que fomentan nuestro sentido
               de comunidad.
             </p>

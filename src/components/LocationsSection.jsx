@@ -1,23 +1,21 @@
 const locations = [
   {
-    country: "ARGENTINA",
-    cities:
-      "Córdoba, Carlos Paz, Villa Allende, Jesus María, Rosario, Bahía Blanca, Neuquén, Salta & Jujuy.",
+    country: "CABA",
+    cities: "Caballito Av. Rivadavia 5000",
   },
   {
-    country: "ESTADOS UNIDOS",
-    cities:
-      "Midtown Miami 122 Buena Vista Blvd, Miami, FL 33127.\n\nBrickell Miami 64 SW 10th St, Miami, FL 33130.",
+    country: "La Plata",
+    cities: "Calle 7 entre 50 y 51, La Plata, Buenos Aires.",
   },
   {
-    country: "URUGUAY",
-    cities: "Calle 29 (Las Gaviotas) entre 20 y 18, Punta del Este, Uruguay.",
+    country: "Mar del Plata",
+    cities: "Av. Luro 3000, Mar del Plata, Buenos Aires.",
   },
 ];
 
 const LocationsSection = () => {
   return (
-    <section id="sucursales" className="max-w-6xl mx-auto pt-16 lg:pt-48">
+    <section id="sucursales" className="max-w-6xl mx-auto pt-16 lg:pt-48 pb-16">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium text-foreground mb-4">
           Estamos donde vos estás.

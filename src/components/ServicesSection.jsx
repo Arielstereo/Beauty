@@ -190,9 +190,15 @@ const ServiceCard = ({ service }) => (
       {service.description}
     </p>
 
-    <button className="w-full cursor-pointer px-4 py-2 text-base font-medium text-black bg-white hover:bg-slate-200 transition-colors duration-300">
+    <a
+      href={`https://api.whatsapp.com/send?phone=1122334455&text=Hola%20quiero%20reservar%20un%20turno%20para%20el%20servicio%20de%20${encodeURIComponent(
+        service.name
+      )}`}
+      target="_blank"
+      className="w-full cursor-pointer px-4 py-2 text-base font-medium text-black bg-white hover:bg-slate-200 transition-colors duration-300"
+    >
       Reservar
-    </button>
+    </a>
   </div>
 );
 
@@ -379,12 +385,15 @@ const ServicesSection = () => {
                 <div className="text-2xl font-bold text-accent mb-4">
                   {combo.discount}
                 </div>
-                <button className="w-full px-4 py-2 text-base font-medium text-black bg-white hover:bg-slate-300 transition-colors duration-300 mb-2">
+                <a
+                  href={`https://api.whatsapp.com/send?phone=1122334455&text=Hola%20quiero%20reservar%20el%20combo%20${encodeURIComponent(
+                    combo.name
+                  )}`}
+                  target="_blank"
+                  className="w-full px-4 py-2 text-base font-medium text-black bg-white hover:bg-slate-300 transition-colors duration-300 mb-2"
+                >
                   Obtener
-                </button>
-                <p className="text-xs text-muted-foreground">
-                  * Válido en días seleccionados
-                </p>
+                </a>
               </div>
             ))}
           </div>
@@ -400,16 +409,20 @@ const ServicesSection = () => {
               El poder de tenerlo todo al mismo tiempo.
             </h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-              En Nails & Co. logramos perfeccionar el arte de la{" "}
+              En Beauty Spa logramos perfeccionar el arte de la{" "}
               <strong>belleza eficiente</strong> creando un servicio de pedicure
               & manicure simultáneo, que ningún otro salón ofrece.
             </p>
             <p className="text-xl font-semibold text-foreground mb-8">
               <strong>Una experiencia VIP de belleza!</strong>
             </p>
-            <button className="inline-flex items-center px-8 py-3 text-lg font-medium text-black bg-white hover:bg-slate-300 cursor-pointer transition-colors duration-300">
+            <a
+              href="https://api.whatsapp.com/send?phone=1122334455&text=Hola%20quiero%20reservar%20el%20servicio%20VIP"
+              target="_blank"
+              className="inline-flex items-center px-8 py-3 text-lg font-medium text-black bg-white hover:bg-slate-300 cursor-pointer transition-colors duration-300"
+            >
               Reservar
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -29,24 +29,30 @@ const Footer = () => {
         <div className="text-center mt-16 pt-8 ">
           <span className="text-4xl font-bold">BEAUTY SPA</span>
           <div className="flex justify-center items-center gap-4 py-8">
-            <Link
-              href="/"
-              className="text-muted-foreground hover:text-muted transition-colors duration-200"
+            <button
+              onClick={() => scrollToSection("inicio")}
+              className="text-muted-foreground hover:text-muted transition-colors duration-200 cursor-pointer"
             >
               INICIO
-            </Link>
-            <Link
-              href="/"
-              className="text-muted-foreground hover:text-muted transition-colors duration-200"
+            </button>
+            <button
+              onClick={() => scrollToSection("nosotros")}
+              className="text-muted-foreground hover:text-muted transition-colors duration-200 cursor-pointer"
             >
               NOSOTROS
-            </Link>
-            <Link
-              href="/"
-              className="text-muted-foreground hover:text-muted transition-colors duration-200"
+            </button>
+            <button
+              onClick={() => scrollToSection("servicios")}
+              className="text-muted-foreground hover:text-muted transition-colors duration-200 cursor-pointer"
             >
               SERVICIOS
-            </Link>
+            </button>
+            <button
+              onClick={() => scrollToSection("sucursales")}
+              className="text-muted-foreground hover:text-muted transition-colors duration-200 cursor-pointer"
+            >
+              SUCURSALES
+            </button>
           </div>
         </div>
       </div>
